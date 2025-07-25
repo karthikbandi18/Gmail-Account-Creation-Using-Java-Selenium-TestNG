@@ -1,4 +1,4 @@
- Project Overview:
+ PROJECT OVERVIEW:
 This project is designed to automate the Gmail account creation process using:
 
 Java as the programming language
@@ -15,7 +15,7 @@ WebDriverManager for automatic browser driver setup
 
 It simulates the process of filling out the Gmail signup form by reading multiple sets of input data (like first name, last name, username, and password) from an Excel sheet, and executing test cases for each data set.
 
-🔧 Tech Stack Used
+🔧 TECH STACK: Used
 Technology	Purpose
 Java	Core programming logic
 Selenium	Web browser automation
@@ -25,10 +25,7 @@ Maven	Dependency and project build management
 WebDriverManager	Auto-downloads browser drivers
 Log4j / SLF4J	(Optional) Logging mechanism
 
-📁 Project Structure
-bash
-Copy
-Edit
+📁 PROJECT STRUCTURE:
 GmailAccountCreation/
 ├── src/
 │   ├── main/java/
@@ -42,7 +39,8 @@ GmailAccountCreation/
 ├── pom.xml                             # Maven dependencies
 ├── .gitignore                          # Git ignore rules
 ├── README.md                           # Project documentation
-🧪 Framework Type: Data-Driven Testing
+
+🧪 FRAMEWORK TYPE: DATA DRIVEN TESTING
 This framework reads test data from an Excel sheet and runs the test multiple times with different data sets using TestNG’s @DataProvider.
 
 ✔ Each row in Excel = One test run
@@ -75,26 +73,18 @@ Browser Drivers
 WebDriverManager handles the ChromeDriver/EdgeDriver setup automatically.
 
 📝 Sample Excel File
-First Name	Last Name	Username	Password
-Karthik	Bandi	karthik.b18	Karthik@123
-Arjun	Dev	arjun.dev01	Arjun@456
+FirstName	 LastName	   Username	    Password      ConfirmPasword
+Karthik	   Bandi	      karthikb18	  Karthik@123   karthik@123
+ 
 
 🚀 How to Run the Project
 Clone the repository
-
-bash
-Copy
-Edit
 git clone https://github.com/yourusername/gmail-account-creation-java-selenium-testng.git
 Open in your IDE (Eclipse or IntelliJ)
 
 Add GmailTestData.xlsx inside testdata/
 
 Run TestNG class from:
-
-swift
-Copy
-Edit
 src/test/java/testcases/GmailAccountTest.java
 View Results
 
@@ -139,25 +129,6 @@ The full README.md file for GitHub?
 
 The exact ExcelUtils.java and TestNG test script templates?
 
-Let me know!
-
-
-
-
-
-
-
-
-You said:
-Total Information to keep in readme file
-
-
-ChatGPT said:
-Absolutely, Karthik! Below is the complete and tailored README.md file content for your project:
-
-markdown
-Copy
-Edit
 # 📧 Gmail Account Creation Using Java + Selenium + TestNG
 
 This project automates the **Gmail account creation process** using **Selenium WebDriver**, **TestNG**, and **Excel-based Data-Driven Framework**. It reads multiple sets of user registration data from an Excel file and automates form submission for each set using Java and Apache POI.
@@ -203,10 +174,6 @@ GmailAccountCreation/
 ├── .gitignore # Git ignore rules
 ├── README.md # Project documentation
 
-yaml
-Copy
-Edit
-
 ---
 
 ## 🧪 Framework Overview (Data-Driven Testing)
@@ -220,10 +187,10 @@ This project follows a **Data-Driven Framework**, where the test inputs (First N
 
 ## 📄 Sample Excel Data (`GmailTestData.xlsx`)
 
-| First Name | Last Name | Username     | Password     |
+| First Name | Last Name | Username     | Password     | confirm
 |------------|-----------|--------------|--------------|
-| Karthik    | Bandi     | karthik.b18  | Karthik@123  |
-| Arjun      | Dev       | arjun.dev01  | Arjun@456    |
+| Karthik    | Bandi     | karthik.b18  | Karthik@123  |karthik@123
+| Arjun      | Dev       | arjun.dev01  | Arjun@456    |Arjun@456
 
 ---
 
