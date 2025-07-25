@@ -1,4 +1,4 @@
- Project Overview
+ Project Overview:
 This project is designed to automate the Gmail account creation process using:
 
 Java as the programming language
