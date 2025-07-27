@@ -65,10 +65,6 @@ Place GmailTestData.xlsx inside the testdata/ folder.
 
 Run the Test
 Run the test file:
-
-swift
-Copy
-Edit
 src/test/java/testcases/GmailAccountTest.java
 Check the Console Output or Reports
 
